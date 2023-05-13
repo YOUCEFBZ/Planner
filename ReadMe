@@ -1,0 +1,50 @@
+# Trip Planner API
+
+The Trip Planner API is a RESTful API that allows users to manage their travel plans. It provides endpoints for creating, reading, updating, and canceling trips.
+
+## Installation
+
+1. Clone or download the project repository.
+
+2. Install the required dependencies using pip.
+
+   ```bash
+   pip install fastapi 
+   pip install uvicorn
+## Usage
+
+    Start the server: uvicorn main:app --reload
+
+   
+Access the API documentation in your web browser:
+
+    URL: http://localhost:8000/docs
+    The documentation provides details about each endpoint and allows you to send requests directly.
+
+API Endpoints:
+
+    Create a new trip: Send a POST request to http://localhost:8000/trips/ with the trip details.
+    Retrieve a list of trips: Send a GET request to http://localhost:8000/trips/.
+    Update a trip: Send a PUT request to http://localhost:8000/trips/{trip_id} with the updated trip details.
+    Replace {trip_id} with the ID of the trip you want to update.
+    Cancel a trip: Send a DELETE request to http://localhost:8000/trips/{trip_id} to cancel a trip.
+    Replace {trip_id} with the ID of the trip you want to cancel.
+
+Note: Make sure to include the necessary request headers and provide the required data in the request body according to the API documentation.
+
+## Configuration
+
+The Trip Planner API uses a static JSON file, trips.json, to store trip information. Ensure that the file exists in the same directory as the Python script and has the correct JSON format.
+
+## Contributing
+
+Contributions to the Trip Planner API are welcome! Please feel free to open an issue or submit a pull request on GitHub if you encounter any issues, have suggestions, or would like to add new features.
+
+## License
+
+The Trip Planner API is open source and released under the MIT License. You can use, modify, and distribute the code according to the terms of the license.
+
+## Contact
+
+For any inquiries or further information, please contact youcefbenaziza123@gmail.com
+
